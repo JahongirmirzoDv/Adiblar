@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/adiblar"
+        android:icon="@drawable/book"
+        android:title="Adiblar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/kutubxona"
+        android:icon="@drawable/book_1"
+        android:title="Saqlanganlar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/saqlanganlar"
+        android:icon="@drawable/bookmark"
+        android:title="Sozlamalar"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    app:ignore="NamespaceTypo">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <KeyFrameSet />
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/scrollView"
+            motion:touchAnchorSide="top" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/activity_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="@+id/name"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/name"
+            motion:layout_constraintTop_toBottomOf="@id/name" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/saved_background" />
+        <Constraint
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:translationX="-10dp"
+            motion:flow_horizontalAlign="start"
+            motion:layout_constraintBottom_toBottomOf="@id/saved_background"
+            motion:layout_constraintEnd_toStartOf="@id/saved_background"
+            motion:layout_constraintStart_toEndOf="@id/back_background"
+            motion:layout_constraintTop_toTopOf="@id/saved_background"
+            motion:transitionEasing="cubic(0.16,0.16,0.8,0.8)" />
+
+        <Constraint
+            android:id="@+id/saved_background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/back_background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/search_background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toStartOf="@id/search_background"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/activity_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="@+id/name"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/name"
+            motion:layout_constraintTop_toBottomOf="@id/name" />
+        <Constraint
+            android:id="@+id/saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:translationZ="10dp"
+            motion:layout_constraintBottom_toBottomOf="@id/saved_background"
+            motion:layout_constraintEnd_toEndOf="@id/saved_background"
+            motion:layout_constraintStart_toStartOf="@id/saved_background"
+            motion:layout_constraintTop_toTopOf="@id/saved_background" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/withSearch1">
+        <Constraint
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/name" />
+        <Constraint
+            android:id="@id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintLeft_toLeftOf="@+id/search"
+            motion:layout_constraintRight_toRightOf="@+id/search"
+            motion:layout_constraintTop_toBottomOf="@+id/search" />
+
+        <Constraint
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/saved_background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/back_background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/search_background"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:alpha="0"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintEnd_toStartOf="@id/search_background"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/activity_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            motion:layout_constraintEnd_toEndOf="@+id/name"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="@+id/name"
+            motion:layout_constraintTop_toBottomOf="@id/name" />
+        <Constraint
+            android:id="@+id/saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:translationZ="10dp"
+            motion:layout_constraintBottom_toBottomOf="@id/saved_background"
+            motion:layout_constraintEnd_toEndOf="@id/saved_background"
+            motion:layout_constraintStart_toStartOf="@id/saved_background"
+            motion:layout_constraintTop_toTopOf="@id/saved_background" />
+        <Constraint
+            android:id="@+id/back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationZ="10dp"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="@id/back_background"
+            motion:layout_constraintEnd_toEndOf="@id/back_background"
+            motion:layout_constraintStart_toStartOf="@id/back_background"
+            motion:layout_constraintTop_toTopOf="@id/back_background" />
+        <Constraint
+            android:id="@+id/search_img"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:translationZ="10dp"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="@id/search_background"
+            motion:layout_constraintEnd_toEndOf="@id/search_background"
+            motion:layout_constraintStart_toStartOf="@id/search_background"
+            motion:layout_constraintTop_toTopOf="@id/search_background" />
+
+    </ConstraintSet>
+    <Transition />
+
+    <Transition
+        motion:constraintSetEnd="@+id/withSearch1"
+        motion:constraintSetStart="@+id/end" />
+    <ConstraintSet
+        android:id="@+id/withSearch2"
+        motion:deriveConstraintsFrom="@+id/withSearch1">
+        <Constraint
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/activity_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintLeft_toLeftOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/name" />
+        <Constraint
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/search" />
+
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetEnd="@+id/withSearch2"
+        motion:constraintSetStart="@+id/withSearch1">
+        <OnSwipe motion:touchAnchorId="@+id/scrollView" />
+    </Transition>
+    <Transition
+        motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@+id/withSearch1" />
+    <OnSwipe motion:touchAnchorId="@+id/scrollView" />
+</MotionScene>

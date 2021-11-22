@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/bottom_item_shape2.xml" value="0.15451505016722408" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/corner.xml" value="0.15197368421052632" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/edit_back.xml" value="0.15197368421052632" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/ic_close.xml" value="0.15451505016722408" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/ic_saves_bookmark.xml" value="0.15451505016722408" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/layer.xml" value="0.403125" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/phone_back.xml" value="0.39692307692307693" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/search.xml" value="0.15608108108108107" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/drawable/search_edit.xml" value="0.15608108108108107" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/activity_main.xml" value="0.14" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/custom_tab.xml" value="0.25" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_add_writer.xml" value="0.16" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_authentication.xml" value="0.18" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_blank.xml" value="0.2" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_liblary.xml" value="0.1417763157894737" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_search.xml" value="0.14560810810810812" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_writer_view.xml" value="0.2" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_writers.xml" value="0.2" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/fragment_writers_rv.xml" value="0.1417763157894737" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/inner_item.xml" value="0.33" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/layout/spinner_item.xml" value="0.1417763157894737" />
+        <entry key="..\:/anp/Adiblar/app/src/main/res/menu/bottom_bar.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

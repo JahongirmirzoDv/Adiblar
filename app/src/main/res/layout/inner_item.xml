@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="170dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp"
+    android:id="@+id/container"
+    app:cardMaxElevation="5dp"
+    android:elevation="2dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/corner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@drawable/corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/wr_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <LinearLayout
+               android:orientation="vertical"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+               <TextView
+                   android:id="@+id/name"
+                   android:fontFamily="@font/sf_pro_display"
+                   android:textFontWeight="700"
+                   android:textColor="#303236"
+                   android:textStyle="normal"
+                   android:textSize="16sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Devon \nLanerakom" />
+
+               <TextView
+                   android:id="@+id/year"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="2dp"
+                   android:fontFamily="@font/sf_pro_display"
+                   android:text="(1923 - 2019)"
+                   android:textFontWeight="400"
+                   android:textSize="12sp" />
+           </LinearLayout>
+            <Space
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/favorites"
+                  android:layout_width="25dp"
+                  android:layout_height="25dp"
+                  android:layout_margin="1dp"
+                  android:elevation="0dp"
+                  app:cardCornerRadius="25dp"
+                  app:cardElevation="0dp"
+                  app:cardMaxElevation="0dp"
+                  app:layout_constraintEnd_toEndOf="@+id/favorites2"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+                  <LinearLayout
+                      android:id="@+id/cr_back"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="#F9F9F9">
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_margin="5dp"
+                          android:src="@drawable/ribbon" />
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/favorites2"
+                  android:layout_width="25dp"
+                  android:layout_height="25dp"
+                  android:layout_margin="1dp"
+                  android:elevation="0dp"
+                  app:cardCornerRadius="25dp"
+                  app:cardElevation="0dp"
+                  android:visibility="invisible"
+                  app:cardMaxElevation="0dp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="@color/back">
+
+                      <ImageView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center"
+                          android:layout_margin="5dp"
+                          android:src="@drawable/ribbon2" />
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+          </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
