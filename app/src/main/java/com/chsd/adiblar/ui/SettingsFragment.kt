@@ -54,7 +54,7 @@ class SettingsFragment : Fragment() {
 
             binding.info.setOnClickListener {
                 MaterialAlertDialogBuilder(requireContext(), R.style.RoundShapeTheme)
-                    .setMessage("This app developed by Muslimbek mobile developer")
+                    .setMessage("This app developed by MobileDv mobile developer")
                     .setPositiveButton(
                         "ok"
                     ) { dialogInterface, i ->
